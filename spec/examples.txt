@@ -1,0 +1,8 @@
+example_id                              | status | run_time        |
+--------------------------------------- | ------ | --------------- |
+./spec/jobs/estimation_job_spec.rb[1:1] | passed | 0.08937 seconds |
+./spec/jobs/estimation_job_spec.rb[1:2] | passed | 0.19029 seconds |
+./spec/models/task_spec.rb[1:1]         | passed | 0.00339 seconds |
+./spec/models/task_spec.rb[1:2]         | passed | 0.00317 seconds |
+./spec/request/tasks_spec.rb[1:1]       | passed | 0.0353 seconds  |
+./spec/request/tasks_spec.rb[1:2]       | passed | 0.0154 seconds  |

@@ -1,0 +1,315 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/marielb/saludtech_todo_app/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/home/marielb/saludtech_todo_app/app/jobs/estimation_job.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null
+        ],
+        "branches": {
+          "[:unless, 0, 6, 4, 6, 22]": {
+            "[:else, 1, 6, 4, 6, 22]": 1,
+            "[:then, 2, 6, 4, 6, 10]": 0
+          },
+          "[:if, 3, 10, 4, 10, 63]": {
+            "[:then, 4, 10, 4, 10, 43]": 1,
+            "[:else, 5, 10, 4, 10, 63]": 0
+          }
+        }
+      },
+      "/home/marielb/saludtech_todo_app/app/jobs/application_job.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "branches": {}
+      },
+      "/home/marielb/saludtech_todo_app/app/models/task.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          5,
+          null,
+          0,
+          null,
+          null,
+          5,
+          null,
+          null,
+          null
+        ],
+        "branches": {
+          "[:if, 0, 18, 4, 24, 7]": {
+            "[:then, 1, 20, 6, 20, 40]": 0,
+            "[:else, 2, 23, 6, 23, 42]": 5
+          }
+        }
+      },
+      "/home/marielb/saludtech_todo_app/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/home/marielb/saludtech_todo_app/app/services/estimation_service.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null
+        ],
+        "branches": {
+          "[:if, 0, 2, 0, 2, 36]": {
+            "[:then, 1, 2, 0, 2, 16]": 1,
+            "[:else, 2, 2, 0, 2, 36]": 0
+          },
+          "[:unless, 3, 12, 4, 12, 65]": {
+            "[:else, 4, 12, 4, 12, 65]": 0,
+            "[:then, 5, 12, 4, 12, 40]": 0
+          },
+          "[:unless, 6, 37, 4, 37, 52]": {
+            "[:else, 7, 37, 4, 37, 52]": 0,
+            "[:then, 8, 37, 4, 37, 14]": 1
+          },
+          "[:unless, 9, 55, 4, 55, 26]": {
+            "[:else, 10, 55, 4, 55, 26]": 0,
+            "[:then, 11, 55, 4, 55, 14]": 0
+          },
+          "[:if, 12, 56, 4, 62, 7]": {
+            "[:then, 13, 57, 6, 59, 22]": 0,
+            "[:else, 14, 61, 6, 61, 15]": 0
+          },
+          "[:unless, 15, 66, 4, 66, 26]": {
+            "[:else, 16, 66, 4, 66, 26]": 0,
+            "[:then, 17, 66, 4, 66, 14]": 0
+          },
+          "[:if, 18, 67, 4, 71, 7]": {
+            "[:then, 19, 68, 6, 68, 13]": 0,
+            "[:else, 20, 67, 4, 71, 7]": 0
+          }
+        }
+      },
+      "/home/marielb/saludtech_todo_app/app/controllers/tasks_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ],
+        "branches": {
+          "[:if, 0, 18, 4, 22, 7]": {
+            "[:then, 1, 19, 6, 19, 72]": 1,
+            "[:else, 2, 21, 6, 21, 48]": 0
+          },
+          "[:if, 3, 26, 4, 30, 7]": {
+            "[:then, 4, 27, 6, 27, 53]": 0,
+            "[:else, 5, 29, 6, 29, 49]": 0
+          }
+        }
+      },
+      "/home/marielb/saludtech_todo_app/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/home/marielb/saludtech_todo_app/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/marielb/saludtech_todo_app/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/marielb/saludtech_todo_app/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      }
+    },
+    "timestamp": 1756413818
+  }
+}

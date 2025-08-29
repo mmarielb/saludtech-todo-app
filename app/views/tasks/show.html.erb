@@ -1,0 +1,8 @@
+<!-- muestra toda la información de una tarea específica. GET /tasks/:id -->
+<h1 class="text-xl font-semibold"><%= @task.title %></h1>
+<p class="mt-2"><%= @task.description %></p>
+<p class="mt-4"><strong>Estimación:</strong> <%= @task.estimated_minutes || "En proceso..." %> minutos</p>
+<p><strong>Estado:</strong> <%= @task.completed? ? "Completada" : "Pendiente" %></p>
+
+<%= link_to "Volver", tasks_path, class: "mr-2" %>
+<%= link_to "Editar", edit_task_path(@task) %>

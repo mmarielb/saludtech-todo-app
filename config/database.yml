@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: postgres
+  host: db
+  port: 5432
+
+development:
+  <<: *default
+  database: saludtech_todo_app_development
+
+test:
+  <<: *default
+  database: saludtech_todo_app_test
+
+production:
+  <<: *default
+  database: saludtech_todo_app_production
+  username: saludtech
+  password: <%= ENV["SALUDTECH_DATABASE_PASSWORD"] %>
