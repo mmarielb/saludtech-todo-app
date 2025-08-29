@@ -37,9 +37,10 @@ class TasksController < ApplicationController
   end
 
   # DELETE /tasks/:id
+
   def destroy
     @task.destroy
-    redirect_to tasks_path, notice: 'Tarea eliminada.'
+    redirect_to tasks_url, notice: 'Tarea eliminada con éxito.'
   end
 
   # PATCH /tasks/:id/toggle_complete
