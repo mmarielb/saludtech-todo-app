@@ -8,8 +8,7 @@ class EstimationJob < ApplicationJob
     # Llama a un servicio que estime los minutos según título y descripción
     minutes = EstimationService.new.estimate_minutes(task.title, task.description)
     task.update(estimated_minutes: minutes) if minutes.present?
-  rescue => e
+  rescue StandardError => e
     Rails.logger.error("EstimationJob failed for task #{task_id}: #{e.message}")
   end
 end
-
