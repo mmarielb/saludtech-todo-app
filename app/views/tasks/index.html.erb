@@ -1,8 +1,8 @@
-<h1 class="text-2xl font-bold mb-4">Lista de Tareas</h1>
+<h1 class="mb-4">Lista de Tareas</h1>
 
-<%= link_to "Nueva tarea", new_task_path, class: "inline-block px-3 py-1 rounded bg-blue-600 text-white" %>
+<%= link_to "Nueva tarea", new_task_path, class: "btn btn-primary mb-3" %>
 
-<table class="w-full mt-4">
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Título</th>
@@ -13,26 +13,18 @@
   </thead>
   <tbody>
     <% @tasks.each do |task| %>
-      <tr class="border-t">
+      <tr>
         <td><%= link_to task.title, task_path(task) %></td>
         <td><%= task.estimated_minutes || "—" %></td>
         <td><%= task.completed? ? "Completada" : "Pendiente" %></td>
-        <td class="flex gap-2">
-          <%= link_to "Editar", edit_task_path(task), class: "px-2 py-1 rounded bg-yellow-400 hover:bg-yellow-500 text-white" %>
-
-          <%= button_to task_path(task),
-                        method: :delete,
-                        form: { "onsubmit" => "return confirm('¿Seguro que deseas eliminar esta tarea?');" },
-                        class: "px-2 py-1 rounded bg-red-600 hover:bg-red-700 text-white" do %>
-            Eliminar
-          <% end %>
-
+        <td>
+          <%= link_to "Editar", edit_task_path(task), class: "btn btn-sm btn-warning me-1" %>
+          <%= link_to "Eliminar", task_path(task), method: :delete, data: { confirm: "¿Seguro que deseas eliminar esta tarea?" }, class: "btn btn-sm btn-danger me-1" %>
           <%= button_to (task.completed? ? "Marcar como pendiente" : "Marcar completada"),
-                        toggle_complete_task_path(task),
-                        method: :patch,
-                        class: "px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white" %>
+                        toggle_complete_task_path(task), method: :patch, class: "btn btn-sm btn-success" %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
+

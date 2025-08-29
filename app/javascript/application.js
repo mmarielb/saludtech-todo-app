@@ -1,9 +1,6 @@
-import "@hotwired/turbo-rails"
-import { Application } from "@hotwired/stimulus"
-import ConfirmController from "./controllers/confirm_controller"
+import Rails from "@rails/ujs"
+Rails.start()
 
-const application = Application.start()
-application.register("confirm", ConfirmController)
 
 
 
