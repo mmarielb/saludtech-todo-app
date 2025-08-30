@@ -9,6 +9,8 @@ gem 'pg', '~> 1.4'
 gem 'puma', '~> 6.6'
 gem 'bootsnap', '>= 1.18.6', require: false
 gem 'sprockets-rails', '~> 3.5'
+gem 'psych', '~> 4.0', platforms: [:ruby]
+
 
 # 🌐 JS y CSS
 gem 'jsbundling-rails'       # Manejo de JS moderno (esbuild, etc.)
