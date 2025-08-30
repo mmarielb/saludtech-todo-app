@@ -1,0 +1,25 @@
+/* app/assets/stylesheets/custom.css */
+.btn-editar {
+  background-color: #6f42c1; /* morado */
+  color: white;
+}
+
+.btn-completar {
+  background-color: #20c997; /* verde aqua */
+  color: white;
+}
+
+.btn-eliminar {
+  background-color: #dc3545; /* rojo bootstrap */
+  color: white;
+}
+
+.btn-magenta {
+  background-color: #ff00ff; /* magenta */
+  color: white;
+  border: none;
+}
+
+.btn-magenta:hover {
+  background-color: #e600e6; /* un poco más oscuro al pasar el mouse */
+}

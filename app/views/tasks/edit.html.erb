@@ -1,4 +1,9 @@
 <!-- página para editar una tarea existente usando _form.html.erb. GET /tasks/:id/edit -->
-<h1>Editar tarea</h1>
-<%= render "form", task: @task %>
-<%= link_to "Volver", tasks_path %>
+<h1 class="mb-4">Editar Tarea</h1>
+
+<div class="card p-4 shadow-sm">
+  <%= render 'form', task: @task %>
+</div>
+
+<%= link_to "Volver", tasks_path, class: "btn btn-secondary mt-3" %>
+

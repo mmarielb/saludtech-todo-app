@@ -1,4 +1,5 @@
 //= link_tree ../images
 //= link_tree ../builds
-//= link old_application.css
+//= link custom.css
+
 

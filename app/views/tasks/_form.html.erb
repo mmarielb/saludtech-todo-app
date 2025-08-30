@@ -1,21 +1,9 @@
 <!-- formulario reutilizable para crear o editar tareas. -->
-<%= form_with model: @task do |f| %>
-  <div class="mb-2">
-    <%= f.label :title %><br>
-    <%= f.text_field :title, required: true, class: "border p-1 w-full" %>
+<%= form_with(model: @task, local: true) do |f| %>
+  <div class="mb-3">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control", required: true %>
   </div>
 
-  <div class="mb-2">
-    <%= f.label :description %><br>
-    <%= f.text_area :description, class: "border p-1 w-full" %>
-  </div>
-
-  <div class="mb-2">
-    <%= f.label :due_date %><br>
-    <%= f.date_field :due_date, class: "border p-1" %>
-  </div>
-
-  <div class="mt-4">
-    <%= f.submit class: "px-3 py-1 bg-green-600 text-white rounded" %>
-  </div>
+  <%= f.submit "Actualizar Tarea", class: "btn btn-magenta" %>
 <% end %>
