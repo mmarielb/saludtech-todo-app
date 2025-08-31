@@ -58,6 +58,9 @@ Editar tarea:
 Tarea actualizada con exito:
 <img width="3219" height="871" alt="image" src="https://github.com/user-attachments/assets/195c86e3-1847-4416-957b-4a90bf961e05" />
 
+Detalle de la tarea:
+<img width="3259" height="1031" alt="image" src="https://github.com/user-attachments/assets/5aaf9d6d-3c4f-4005-9551-59e3b34097d0" />
+
 Eliminar tarea:
 <img width="3230" height="1231" alt="image" src="https://github.com/user-attachments/assets/5027cc2d-3f46-4c3b-8d35-797cb759143d" />
 
