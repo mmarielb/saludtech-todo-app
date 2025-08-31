@@ -24,7 +24,7 @@
           <div class="d-flex gap-2">
             <%= link_to "Editar", edit_task_path(task), class: "btn btn-editar me-2" %>
             <%= button_to "Eliminar", task_path(task), method: :delete, data: { confirm: "¿Seguro que deseas eliminar esta tarea?" }, class: "btn btn-eliminar me-2" %>
-            <%= button_to "Marcar completada", toggle_complete_task_path(task), method: :patch, class: "btn btn-completar" %>
+            <%= link_to (task.completed? ? "Marcar como no completada" : "Marcar como completada"), toggle_complete_task_path(task), method: :patch, class: (task.completed? ? "btn btn-sm btn-primary" : "btn btn-sm btn-completar")%>
           </div>
         </td>
       </tr>

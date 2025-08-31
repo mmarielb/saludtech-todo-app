@@ -4,7 +4,7 @@
 <div class="card p-4 shadow-sm">
   <p><strong>Título:</strong> <%= @task.title %></p>
   <p><strong>Descripción:</strong> <%= @task.description %></p>
-  <p><strong>Asignar a:</strong> <%= @task.asignar_a %></p>
+  <p><strong>Responsable:</strong> <%= @task.asignar_a %></p>
   <p><strong>Estimación:</strong> <%= @task.estimated_minutes %> min</p>
   <p><strong>Estado:</strong> <%= @task.completed? ? "Completada" : "Pendiente" %></p>
 </div>
