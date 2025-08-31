@@ -1,4 +1,3 @@
-# app/services/estimation_service.rb
 require 'openai' if defined?(OpenAI)
 
 class EstimationService
@@ -6,30 +5,32 @@ class EstimationService
     @client = client || default_client
   end
 
-  # devuelve Integer (minutes) o nil
+  # Devuelve Integer (minutes) o nil
   def estimate_minutes(title, description = nil)
-    # si no hay API key, usar heurística local:
     return heuristic(title, description) unless openai_available?
 
     prompt = build_prompt(title, description)
-    response = @client.chat(
-      parameters: {
-        model: 'gpt-4o-mini', # si no tienes ese modelo usa "gpt-3.5-turbo"
-        messages: [
-          { role: 'system',
-            content: 'Eres un asistente que devuelve solamente un número entero que representa minutos.' },
-          { role: 'user', content: prompt }
-        ],
-        max_tokens: 30,
-        temperature: 0.0
-      }
-    )
 
-    text = extract_text_from_response(response)
-    parse_minutes(text) || heuristic(title, description)
-  rescue StandardError => e
-    Rails.logger.error("EstimationService error: #{e.message}")
-    heuristic(title, description)
+    begin
+      response = @client.chat(
+        parameters: {
+          model: 'gpt-4o-mini', # si no tienes acceso, usar "gpt-3.5-turbo"
+          messages: [
+            { role: 'system',
+              content: 'Eres un asistente que devuelve solamente un número entero que representa minutos.' },
+            { role: 'user', content: prompt }
+          ],
+          max_tokens: 30,
+          temperature: 0.0
+        }
+      )
+
+      text = extract_text_from_response(response)
+      parse_minutes(text) || heuristic(title, description)
+    rescue StandardError => e
+      Rails.logger.error("EstimationService error: #{e.message}")
+      heuristic(title, description)
+    end
   end
 
   private
@@ -75,10 +76,10 @@ class EstimationService
     end
   end
 
+  # Heurística local segura si OpenAI falla o no hay API key
   def heuristic(title, description)
     t_words = title.to_s.split.size
     d_words = description.to_s.split.size
-    # 0.5 minuto por palabra de título + 0.2 por palabra de descripción, al menos 1 minutos
     [(t_words * 0.5 + (d_words * 0.2)).ceil, 1].max
   end
 end
