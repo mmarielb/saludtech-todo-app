@@ -42,25 +42,26 @@ Las tareas se almacenan en una base de datos PostgreSQL.
 ## Como debe verse
 
 Pagina principal:
-<img width="3238" height="617" alt="image" src="https://github.com/user-attachments/assets/51423659-1e43-44d1-8cad-67c08c4a8e22" />
+<img width="3242" height="764" alt="image" src="https://github.com/user-attachments/assets/4b146751-4617-46e7-b5e2-58b5808014f4" />
 
 Crear una nueva tarea:
-<img width="3241" height="842" alt="image" src="https://github.com/user-attachments/assets/7f56ec1c-6feb-45db-a325-69702c2985f7" />
+<img width="3230" height="1326" alt="image" src="https://github.com/user-attachments/assets/c86726ed-3789-44d6-a879-c25bab9119d6" />
 
-<img width="3241" height="842" alt="image" src="https://github.com/user-attachments/assets/543bf55c-6c6e-4679-8443-c6d1ec277425" />
+<img width="3230" height="1326" alt="image" src="https://github.com/user-attachments/assets/8e3c0d9d-9350-4cb5-8119-4311695c5f6a" />
 
 Tarea creada con exito:
-<img width="3241" height="842" alt="image" src="https://github.com/user-attachments/assets/3264ff27-f9b2-44cd-ad04-1309679c27c1" />
+<img width="3232" height="889" alt="image" src="https://github.com/user-attachments/assets/0049c983-3877-477f-a7de-4d8e2d62c480" />
 
 Editar tarea:
-<img width="3241" height="842" alt="image" src="https://github.com/user-attachments/assets/c42cfd1a-c1ee-47fa-95a7-53e97ba8a296" />
+<img width="3203" height="1345" alt="image" src="https://github.com/user-attachments/assets/00eac7e7-63d4-4d3b-ab25-a07b07ca1645" />
 
 Tarea actualizada con exito:
-<img width="3241" height="842" alt="image" src="https://github.com/user-attachments/assets/0b58890a-4655-426f-bc14-e8820b130f24" />
+<img width="3219" height="871" alt="image" src="https://github.com/user-attachments/assets/195c86e3-1847-4416-957b-4a90bf961e05" />
 
 Eliminar tarea:
-<img width="3222" height="1245" alt="image" src="https://github.com/user-attachments/assets/ec3e0155-6139-48da-8ee1-76fd3465cdc0" />
+<img width="3230" height="1231" alt="image" src="https://github.com/user-attachments/assets/5027cc2d-3f46-4c3b-8d35-797cb759143d" />
 
 Tarea eliminada con exito:
-<img width="3242" height="764" alt="image" src="https://github.com/user-attachments/assets/f05fab9d-d5f5-45e3-acc5-fa13ab2347e7" />
+<img width="3245" height="845" alt="image" src="https://github.com/user-attachments/assets/cecd1f19-7380-4c75-ae0b-77bee03ff60b" />
+
 
