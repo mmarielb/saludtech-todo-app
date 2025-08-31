@@ -24,6 +24,10 @@ class TasksController < ApplicationController
     end
   end
 
+  # GET /tasks/:id
+  def show
+  end
+
   # GET /tasks/:id/edit
   def edit
   end
@@ -59,7 +63,7 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:title)
+    params.require(:task).permit(:title, :completed, :description, :asignar_a)
   end
 
   def calculate_estimation(title)

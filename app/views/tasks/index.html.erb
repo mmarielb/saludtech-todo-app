@@ -6,15 +6,18 @@
   <thead>
     <tr>
       <th>Título</th>
-      <th>Estimación (min)</th>
+      <th>Descripción</th>
+      <th>Responsable</th>
+      <th>Estimación</th>
       <th>Estado</th>
-      <th>Acciones</th>
     </tr>
   </thead>
   <tbody>
     <% @tasks.each do |task| %>
       <tr>
         <td><%= link_to task.title, task_path(task) %></td>
+        <td><%= task.description %></td>
+        <td><%= task.asignar_a %></td>
         <td><%= task.estimated_minutes %> min</td>
         <td><%= task.completed? ? "Completada" : "Pendiente" %></td>
         <td>
@@ -22,11 +25,13 @@
             <%= link_to "Editar", edit_task_path(task), class: "btn btn-editar me-2" %>
             <%= button_to "Eliminar", task_path(task), method: :delete, data: { confirm: "¿Seguro que deseas eliminar esta tarea?" }, class: "btn btn-eliminar me-2" %>
             <%= button_to "Marcar completada", toggle_complete_task_path(task), method: :patch, class: "btn btn-completar" %>
-
           </div>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+
+
 

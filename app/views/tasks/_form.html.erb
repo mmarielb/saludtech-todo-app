@@ -1,9 +1,34 @@
 <!-- formulario reutilizable para crear o editar tareas. -->
 <%= form_with(model: @task, local: true) do |f| %>
+  <% if @task.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @task.errors.full_messages.each do |m| %>
+          <li><%= m %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="mb-3">
-    <%= f.label :title %>
+    <%= f.label :title, "Título" %>
     <%= f.text_field :title, class: "form-control", required: true %>
   </div>
 
-  <%= f.submit "Actualizar Tarea", class: "btn btn-magenta" %>
+  <div class="mb-3">
+    <%= f.label :description, "Descripción" %>
+    <%= f.text_area :description, class: "form-control", rows: 3 %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :asignar_a, "Asignar a" %>
+    <%= f.text_field :asignar_a, class: "form-control" %>
+  </div>
+
+  <div class="form-check mb-3">
+    <%= f.check_box :completed, class: "form-check-input" %>
+    <%= f.label :completed, "Completada", class: "form-check-label" %>
+  </div>
+
+  <%= f.submit class: "btn btn-primary" %>
 <% end %>

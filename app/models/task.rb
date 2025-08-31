@@ -1,6 +1,8 @@
 class Task < ApplicationRecord
   validates :title, presence: true, length: { maximum: 200 }
   validates :estimated_minutes, numericality: { only_integer: true, greater_than: 0 }, allow_nil: true
+  validates :description, length: { maximum: 500 }, allow_blank: true
+  validates :asignar_a, length: { maximum: 100 }, allow_blank: true
 
   after_commit :enqueue_estimation_job, on: :create
 
